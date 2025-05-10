@@ -1,1 +1,761 @@
- html, body {height: 100%;margin: 0;padding: 0;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;line-height: 1.6;-webkit-font-smoothing: antialiased;}html {font-size: 100%;}body {color: #18202A;}*, *::before, *::after {box-sizing: border-box;margin: 0;padding: 0;}img, picture, video, canvas, svg {display: block;max-width: 100%;height: auto;}input, button, textarea, select {font: inherit;color: inherit;}a {color: inherit;text-decoration-line: underline;text-decoration-color: #18202A;text-decoration-thickness: 1px !important;text-decoration-style: solid;text-underline-offset: .1em;}a:hover {text-decoration: none;}h1, h2, h3, h4 {font-weight: 500;line-height: 1.3;color: #18202A;margin-bottom: 1rem;}h1 {font-size: 3rem;}h2 {font-size: 2.5rem;}p {margin-bottom: 1rem;}.overline {font-weight: 700;font-size: .9375rem;text-transform: uppercase;letter-spacing: 2px;}ul, ol {margin-top: 1rem;padding-left: 1.75rem;}ul > li, ol > li {margin-top: .5rem;}section, div {position: relative;}.row {display: flex;flex-direction: row;margin: 0 auto;}.stack {flex-direction: column;}.gap {gap: 2rem;}.gap-small {gap: 1rem;}.lg {max-width: 1180px;}.md {max-width: 640px;}.col {display: flex;flex-direction: column;flex-grow: 1;flex-basis: 0;}.col.half {max-width: 50%;}.col.h-left {align-items: flex-start;}.col.h-center {align-items: center;}.col.h-right {align-items: flex-end;}.col.v-top {justify-content: flex-start;}.col.v-center {justify-content: center;}.col.v-bottom {justify-content: flex-end;}.col.no-growth {flex-grow: 0;flex-basis: auto;}header {margin: 0;padding: 1.75rem 2rem;background-color: #000;z-index: 999;}header.fixed {width: 100%;position: fixed;top: 0;left: 0;}nav ul {display: flex;gap: 3rem;list-style: none;margin: 0;padding: 0;}nav ul li {margin: 0;padding: 0;}header nav li {font-weight: 500;font-size: .9375rem;color: #FFF;}header nav li > a {text-decoration: none;}header nav li > a:hover, header nav li > a.active {text-decoration: underline;}#nav-toggle {display: none;}.nav-toggle-label {display: none;width: 1.5rem;height: 1.25rem;position: absolute;top: 2.125rem;right: 2rem;cursor: pointer;z-index: 1001;}.nav-toggle-label span {width: 100%;height: 0.125rem;position: absolute;top: 50%;left: 0;background-color: #FFF;transition: .3s ease;transform-origin: center;}.nav-toggle-label span:nth-child(1) {transform: translateY(-0.5rem);}.nav-toggle-label span:nth-child(2) {transform: translateY(0);}.nav-toggle-label span:nth-child(3) {transform: translateY(0.5rem);}#nav-toggle:checked + .nav-toggle-label span:nth-child(1) {transform: rotate(45deg);}#nav-toggle:checked + .nav-toggle-label span:nth-child(2) {opacity: 0;}#nav-toggle:checked + .nav-toggle-label span:nth-child(3) {transform: rotate(-45deg);}.mobile-nav-overlay {display: flex;flex-direction: column;align-items: center;justify-content: center;position: fixed;inset: 0;background-color: #000;opacity: 0;visibility: hidden;z-index: 1000;pointer-events: none;transition: opacity .3s ease, visibility .3s ease;}#nav-toggle:checked ~ .mobile-nav-overlay {opacity: .95;visibility: visible;pointer-events: auto;}.mobile-nav-overlay ul {flex-direction: column;align-items: center;}.mobile-nav-overlay li {margin: 1rem 0;font-size: 1.125rem;}.mobile-nav-overlay a:hover, .mobile-nav-overlay a.active {text-decoration: none;}section {padding: 10rem 2rem;}section.meta {padding: 3rem 2rem;word-break: break-word;}.bg-cover-overlay {position: absolute;inset: 0;background: rgba(0, 0, 0, .3);}#home {padding: 0 2rem;background: url("/assets/images/digital-network-mesh-motion.jpg") center no-repeat scroll;background-size: cover;}#home .row {height: 90vh;min-height: 700px;z-index: 1;}#home .col.half {max-width: 45%;}#home .overline {color: #BCAB99;}#home h1 {font-weight: 400;color: #FFF;margin-bottom: 0;}#intro p {font-weight: 500;font-size: 1.5rem;text-align: center;margin-bottom: .5rem;}#attitude {background-color: #F3F3F1;}#attitude .overline {color: #A48D74;text-align: center;}#attitude h2 {text-align: center;margin-bottom: 14%;}#attitude .col {background: url("/assets/images/digital-network-mesh-motion-square.jpg") center no-repeat;background-size: cover;padding: 2.5rem;}#attitude img {max-width: 60px;margin-bottom: 15%;}#attitude h3 {font-weight: 600;font-size: 1.125rem;color: #FFF;}#attitude .col p {color: #98A0AA;margin-bottom: 0;}#sectors .overline {color: #A48D74;text-align: center;}#sectors h2 {text-align: center;}#sectors .intro {text-align: center;margin-bottom: 15%;}#sectors .col {min-height: 240px;background-position: center;background-repeat: no-repeat;background-size: cover;padding: 2rem;}#sectors .bg-cover-1 {background-image: url("/assets/images/man-woman-conversation-server-room.jpg");}#sectors .bg-cover-2 {background-image: url("/assets/images/healthcare-digital-doctor-magnetic-resonance-imaging.jpg");}#sectors .bg-cover-3 {background-image: url("/assets/images/future-financial-services-smartphone-digital.jpg");}#sectors .bg-cover-4 {background-image: url("/assets/images/energy-smart-grid-renewable-future.jpg");}#sectors .bg-cover-5 {background-image: url("/assets/images/technican-manufacturing-robot-arm-tablet.jpg");}#sectors .col p {font-weight: 700;font-size: .8125rem;color: #FFF;text-align: center;text-transform: uppercase;letter-spacing: 2px;word-break: break-word;margin-bottom: 0;position: relative;z-index: 1;}#collective .overline {color: #A48D74;text-align: center;}#collective h2 {text-align: center;}#collective .intro {text-align: center;margin-bottom: 0 }#approach {padding: 0;background-color: #F3F3F1;}#approach .bg-cover {background: url("/assets/images/digital-network-mesh-motion.jpg") center no-repeat;background-size: cover;padding: 8rem;}#approach img {max-width: 130px;position: relative;}#approach .info {padding: 8rem;}#approach .info h3 {font-weight: 600;font-size: 1.125rem;}#leadership {padding-top: 10rem;padding-bottom: 6rem;}#leadership .overline {color: #A48D74;text-align: center;}#leadership h2 {text-align: center;}#leadership .intro {text-align: center;margin-bottom: 15%;}#leadership .col {align-items: center;}#leadership img {margin-bottom: 10%;}#leadership .team-member {display: flex;flex-direction: column;align-items: center;text-align: center;}#leadership .team-member h3 {font-weight: 600;font-size: 1.5rem;margin-bottom: .5rem;}#leadership .team-member .position {margin-bottom: 0;}#leadership ul.social-icons {display: flex;gap: .75rem;list-style: none;margin: 1.5rem 0 1.875rem;padding: 0;}#leadership ul.social-icons > li {margin: 0;padding: 0;}#leadership ul.social-icons svg {color: #9e9d9b;fill: #9e9d9b;}#leadership ul.social-icons a:hover > svg {color: #18202A;fill: #18202A;}#leadership .team-member .bio {margin-bottom: 15%;}footer {background: #000 url("/assets/images/digital-network-mesh-motion.jpg") center no-repeat scroll;background-size: cover;position: relative;}footer nav ul, footer nav ul > li {margin: 0;padding: 0;}footer nav ul {flex-wrap: wrap;justify-content: center;gap: .75rem;}footer nav ul > li {line-height: 1;}footer .locations {padding: 1rem 0;background-color: #18202A;}footer .locations p {font-weight: 600;font-size: .8125rem;color: #98A0AA;text-transform: uppercase;letter-spacing: 2px;margin-bottom: 0;}footer .note {padding: 12rem 2rem;}footer .note img {margin-bottom: 1.5rem;}footer .note p {color: #FFF;text-align: center;margin-bottom: 0;}footer .meta {font-size: .8125rem;padding: 1.5rem 2rem;}footer .meta p, footer .meta a {color: #68707A;}footer p {margin-bottom: .5rem;}footer a {text-decoration: none;}footer a:hover {text-decoration: underline;}.accent {color: #BCAB99;}.accent-dark {color: #A48D74;}.accent-white {color: #FFF;}.accent-gray-light {color: #98A0AA;}.quote {font-family: Georgia, "Times New Roman", Times, serif;font-style: italic;font-size: clamp(1.25rem, 2vw, 1.5rem);margin-bottom: 0;padding: 15% 10%;}.align-center {text-align: center;}.mt0 {margin-top: 0;}.mb0 {margin-bottom: 0;}.pt0 {padding-top: 0;}.pb0 {padding-bottom: 0;}@media (max-width: 767px) {h1 {font-size: 2rem;}h2 {font-size: 1.75rem;}.overline {font-size: .8125rem;}header {padding-top: 1.25rem;padding-bottom: 1.25rem;}header .col.no-growth {max-width: 20%;}section {padding-top: 6rem;padding-bottom: 6rem;}#home .row {min-height: 600px;}#intro p {font-size: 1.125rem;}#attitude h2 {margin-bottom: 15%;}#approach .bg-cover, #approach .info {padding: 3rem;}#leadership {padding-top: 6rem;padding-bottom: 0;}#leadership .team {margin-bottom: 2rem;}footer .locations p {font-size: .75rem;}.col.half, #home .col.half {max-width: none;}nav ul.nav {display: none;}.nav-toggle-label {display: block;top: 1.625rem;}.row {flex-direction: column;}.row.reverse {flex-direction: column-reverse;}.lg {max-width: 480px;}}@media (min-width: 768px) and (max-width: 1024px) {h1 {font-size: 2.5rem;}h2 {font-size: 2.25rem;}.overline {font-size: .875rem;}section {padding-top: 8rem;padding-bottom: 8rem;}#home .col.half {max-width: 55%;}}
+/*** Modern minimal reset ***/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+html { font-size: 100%; }
+
+body { color: #18202A; }
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea, select {
+    font: inherit;
+    color: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration-line: underline;
+    text-decoration-color: #18202A;
+    text-decoration-thickness: 1px !important;
+    text-decoration-style: solid;
+    text-underline-offset: .1em;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*** Headings ***/
+
+h1, h2, h3, h4 {
+    font-weight: 500;
+    line-height: 1.3;
+    color: #18202A;
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+
+/*** Text ***/
+
+p { margin-bottom: 1rem; }
+
+.overline {
+    font-weight: 700;
+    font-size: .9375rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*** Lists ***/
+
+ul, ol {
+    margin-top: 1rem;
+    padding-left: 1.75rem;
+}
+
+ul > li, ol > li {
+    margin-top: .5rem;
+}
+
+/* Sections and divs */
+
+section, div {
+    position: relative;
+}
+
+/* Rows and columns */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.stack {
+    flex-direction: column;
+}
+
+.gap {
+    gap: 2rem;
+}
+
+.gap-small {
+    gap: 1rem;
+}
+
+.lg {
+    max-width: 1180px;
+}
+
+.md {
+    max-width: 640px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.half {
+    max-width: 50%;
+}
+
+.h-left {
+    align-items: flex-start;
+}
+
+.h-center {
+    align-items: center;
+}
+
+.h-right {
+    align-items: flex-end;
+}
+
+.v-top {
+    justify-content: flex-start;
+}
+
+.v-center {
+    justify-content: center;
+}
+
+.v-bottom {
+    justify-content: flex-end;
+}
+
+.no-growth {
+    flex-grow: 0;
+    flex-basis: auto;
+}
+
+/*** Header ***/
+
+header {
+    margin: 0;
+    padding: 1.75rem 2rem;
+    background-color: #000;
+    z-index: 999;
+}
+
+header.fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/*** Navigation ***/
+
+nav ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Desktop navigation */
+
+header nav li {
+    font-weight: 500;
+    font-size: .9375rem;
+    color: #FFF;
+}
+
+header nav li > a {
+    text-decoration: none;
+}
+
+header nav li > a:hover,
+header nav li > a.active {
+    text-decoration: underline;
+}
+
+/*** Mobile navigation ***/
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    width: 1.5rem;
+    height: 1.25rem;
+    position: absolute;
+    top: 2.125rem;
+    right: 2rem;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.nav-toggle-label span {
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #FFF;
+    transition: .3s ease;
+    transform-origin: center;
+
+}
+
+.nav-toggle-label span:nth-child(1) {
+    transform: translateY(-0.5rem);
+}
+
+.nav-toggle-label span:nth-child(2) {
+    transform: translateY(0);
+}
+
+.nav-toggle-label span:nth-child(3) {
+    transform: translateY(0.5rem);
+}
+
+/* Animation */
+
+#nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+#nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+    opacity: 0;
+}
+
+#nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+/* Overlay */
+
+.mobile-nav-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    pointer-events: none;
+    transition: opacity .3s ease, visibility .3s ease;
+}
+
+#nav-toggle:checked ~ .mobile-nav-overlay {
+    opacity: .95;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.mobile-nav-overlay ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-nav-overlay li {
+    margin: 1rem 0;
+    font-size: 1.125rem;
+}
+
+.mobile-nav-overlay a:hover,
+.mobile-nav-overlay a.active {
+    text-decoration: none;
+}
+
+/*** Sections ***/
+
+section {
+    padding: 10rem 2rem;
+}
+
+section.meta {
+    padding: 3rem 2rem;
+    word-break: break-word;
+}
+
+/* Background images */
+
+.bg-cover-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .3);
+}
+
+/*** Home ***/
+
+#home {
+    padding: 0 2rem;
+    background: url("/assets/images/digital-network-mesh-motion.jpg") center no-repeat scroll;
+    background-size: cover;
+}
+
+#home .row {
+    height: 90vh;
+    min-height: 700px;
+    z-index: 1;
+}
+
+#home .half { max-width: 45%; }
+
+#home .overline { color: #BCAB99; }
+
+#home h1 {
+    font-weight: 400;
+    color: #FFF;
+    margin-bottom: 0;
+}
+
+/*** Intro ***/
+
+#intro p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+/*** Attitude ***/
+
+#attitude { background-color: #F3F3F1; }
+
+#attitude .overline {
+    color: #A48D74;
+    text-align: center;
+}
+
+#attitude h2 {
+    text-align: center;
+    margin-bottom: 14%;
+}
+
+#attitude .col {
+    background: url("/assets/images/digital-network-mesh-motion-square.jpg") center no-repeat;
+    background-size: cover;
+    padding: 2.5rem;
+}
+
+#attitude img {
+    max-width: 60px;
+    margin-bottom: 15%;
+}
+
+#attitude h3 {
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #FFF;
+}
+
+#attitude p {
+    color: #98A0AA;
+    margin-bottom: 0;
+}
+
+/*** Sectors ***/
+
+#sectors .overline {
+    color: #A48D74;
+    text-align: center;
+}
+
+#sectors h2 { text-align: center; }
+
+#sectors .intro {
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+#sectors .col {
+    min-height: 240px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+}
+
+#sectors .bg-cover-1 {
+    background-image: url("/assets/images/man-woman-conversation-server-room.jpg");
+}
+
+#sectors .bg-cover-2 {
+    background-image: url("/assets/images/healthcare-digital-doctor-magnetic-resonance-imaging.jpg");
+}
+
+#sectors .bg-cover-3 {
+    background-image: url("/assets/images/future-financial-services-smartphone-digital.jpg");
+}
+
+#sectors .bg-cover-4 {
+    background-image: url("/assets/images/energy-smart-grid-renewable-future.jpg");
+}
+
+#sectors .bg-cover-5 {
+    background-image: url("/assets/images/technican-manufacturing-robot-arm-tablet.jpg");
+}
+
+#sectors p {
+    font-weight: 700;
+    font-size: .8125rem;
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-break: break-word;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+}
+
+/*** Collective ***/
+
+#collective .overline {
+    color: #A48D74;
+    text-align: center;
+}
+
+#collective h2 { text-align: center; }
+
+#collective .intro {
+    text-align: center;
+    margin-bottom: 0
+}
+
+/*** Approach ***/
+
+#approach {
+    padding: 0;
+    background-color: #F3F3F1;
+}
+
+#approach .bg-cover {
+    background: url("/assets/images/digital-network-mesh-motion.jpg") center no-repeat;
+    background-size: cover;
+    padding: 8rem; 
+}
+
+#approach img {
+    max-width: 130px;
+    position: relative;
+}
+
+#approach .info { padding: 8rem; }
+
+#approach .info h3 {
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+/*** Leadership team ***/
+
+#leadership {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+}
+
+#leadership .overline {
+    color: #A48D74;
+    text-align: center;
+}
+
+#leadership h2 { text-align: center; }
+
+#leadership .intro {
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+#leadership .col { align-items: center; }
+
+#leadership img { margin-bottom: 10%; }
+
+#leadership .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#leadership .team-member h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+#leadership .team-member .position { margin-bottom: 0; }
+
+#leadership ul.social-icons {
+    display: flex;
+    gap: .75rem;
+    list-style: none;
+    margin: 1.5rem 0 1.875rem;
+    padding: 0;
+}
+
+#leadership ul.social-icons > li {
+    margin: 0;
+    padding: 0;
+}
+
+#leadership ul.social-icons svg {
+    color: #9e9d9b;
+    fill: #9e9d9b;
+}
+
+#leadership ul.social-icons a:hover > svg {
+    color: #18202A;
+    fill: #18202A;
+}
+
+#leadership .team-member .bio {
+    margin-bottom: 15%;
+}
+
+/*** Footer ***/
+
+footer {
+    background: #000 url("/assets/images/digital-network-mesh-motion.jpg") center no-repeat scroll;
+    background-size: cover;
+    position: relative;
+}
+
+footer nav ul,
+footer nav ul > li {
+    margin: 0;
+    padding: 0;
+}
+
+footer nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .75rem;
+}
+
+footer nav ul > li {
+    line-height: 1;
+}
+
+footer .locations {
+    padding: 1rem 0;
+    background-color: #18202A;
+}
+
+footer .locations p {
+    font-weight: 600;
+    font-size: .8125rem;
+    color: #98A0AA;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+footer .note {
+    padding: 12rem 2rem;
+}
+
+footer .note img {
+    margin-bottom: 1.5rem;
+}
+
+footer .note p {
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+footer .meta {
+    font-size: .8125rem;
+    padding: 1.5rem 2rem;
+}
+
+footer .meta p,
+footer .meta a {
+    color: #68707A;
+}
+
+footer p {
+    margin-bottom: .5rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*** Helper ***/
+
+.accent { color: #BCAB99; }
+
+.accent-dark { color: #A48D74; }
+
+.accent-white { color: #FFF; }
+
+.accent-gray-light { color: #98A0AA; }
+
+.quote {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    margin-bottom: 0;
+    padding: 15% 10%;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+.pt0 {
+    padding-top: 0;
+}
+
+.pb0 {
+    padding-bottom: 0;
+}
+
+/*** Media queries ***/
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .overline {
+        font-size: .8125rem;
+    }
+
+    header {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+
+    header .no-growth {
+        max-width: 20%;
+    }
+
+    section {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    #home .row {
+        min-height: 600px;
+    }
+
+    #intro p {
+        font-size: 1.125rem;
+    }
+
+    #attitude h2 {
+        margin-bottom: 15%;
+    }
+
+    #approach .bg-cover,
+    #approach .info {
+        padding: 3rem;
+    }
+
+    #leadership {
+        padding-top: 6rem;
+        padding-bottom: 0;
+    }
+
+    #leadership .team {
+        margin-bottom: 2rem;
+    }
+
+    footer .locations p {
+        font-size: .75rem;
+    }
+
+    .half,
+    #home .half {
+        max-width: none;
+    }
+
+    nav ul.nav {
+        display: none;
+    }
+
+    .nav-toggle-label {
+        display: block;
+        top: 1.625rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .lg {
+        max-width: 480px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    .overline {
+        font-size: .875rem;
+    }
+
+    section {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    #home .half {
+        max-width: 55%;
+    }
+}
